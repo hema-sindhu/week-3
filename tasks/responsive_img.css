@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.image-container {
+    width: 80%; 
+    max-width: 1200px; 
+}
+
+img {
+    width: 100%; 
+    max-width: 100%; 
+    height: auto; 
+}
+
+@media (max-width: 600px) {
+    .image-container {
+        width: 95%; 
+    }
+}

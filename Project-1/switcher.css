@@ -1,0 +1,114 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #007BFF;
+    --secondary-color: #6c757d;
+    --accent-color: #28a745;
+    --padding: 20px;
+    --margin: 10px;
+    --transition-duration: 0.3s;
+}
+
+/* Define Dark Theme Variables */
+body.dark-theme {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --primary-color: #bb86fc;
+    --secondary-color: #03dac6;
+    --accent-color: #cf6679;
+}
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    transition: background-color var(--transition-duration), color var(--transition-duration);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: var(--padding);
+    text-align: center;
+}
+
+h1, h2 {
+    margin: var(--margin) 0;
+}
+
+main {
+    padding: var(--padding);
+}
+
+section {
+    background-color: var(--background-color);
+    padding: var(--padding);
+    margin: var(--margin);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow var(--transition-duration);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: var(--padding);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.theme-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.theme-switcher input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--secondary-color);
+    transition: var(--transition-duration);
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: var(--transition-duration);
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: var(--accent-color);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+@media (max-width: 600px) {
+    header, main, footer {
+        padding: var(--padding);
+        text-align: center;
+    }
+
+    .theme-switcher {
+        top: 10px;
+        right: 10px;
+    }
+}

@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.decorative-text {
+    position: relative;
+    padding: 20px 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+.decorative-text::before,
+.decorative-text::after {
+    content: "★";
+    font-size: 24px;
+    color: #007BFF;
+    position: absolute;
+}
+
+.decorative-text::before {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.decorative-text::after {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}

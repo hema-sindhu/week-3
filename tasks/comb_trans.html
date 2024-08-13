@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Spinner</title>
+    <link rel="stylesheet" href="comb_trans.css">
+</head>
+<body>
+    <div class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+    <button id="toggleSpinner">Toggle Spinner</button>
+
+    <script>
+        const button = document.getElementById('toggleSpinner');
+        const spinnerContainer = document.querySelector('.spinner-container');
+
+        button.addEventListener('click', () => {
+            spinnerContainer.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

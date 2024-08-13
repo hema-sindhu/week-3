@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Column Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            background-color: burlywood;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+        }
+
+        .column {
+            flex: 1;
+            padding: 1em;
+            border: 1px solid red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <main>
+        <div class="column">
+            <h2>Column 1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum repellendus repellat quas molestiae autem, mollitia debitis, quisquam excepturi in consectetur nesciunt dolores veritatis dolorem, laborum quaerat voluptates numquam hic doloribus laboriosam. Consectetur quidem, delectus consequuntur obcaecati facilis reprehenderit sequi sapiente fuga officia dolores id ea quam facere deserunt consequatur sed libero ducimus iusto magnam totam debitis. At, amet ex similique voluptates eaque doloremque animi eligendi voluptatum, velit sint corrupti, officia consectetur nostrum impedit aspernatur corporis facilis! Tempore soluta deserunt commodi animi. Blanditiis maiores dolorum commodi mollitia sapiente! Repellat rem deleniti obcaecati nostrum quibusdam, quasi laboriosam adipisci magnam! Soluta, perspiciatis earum?</p>
+        </div>
+        <div class="column">
+            <h2>Column 2</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, vero eaque quo facere quod officiis sequi consectetur provident deleniti cum ipsam reprehenderit dolore reiciendis similique architecto nemo? Voluptatibus quae ea impedit, inventore necessitatibus, mollitia assumenda id commodi quasi animi veniam nemo excepturi. Ea, cum fugiat. Reprehenderit expedita, perspiciatis optio saepe pariatur corporis impedit beatae voluptas commodi laboriosam eum, totam excepturi velit rerum tempora, harum inventore ut corrupti ipsa. Possimus magnam cum molestias maiores, dignissimos, at ut doloremque illum ducimus minus quos quo impedit, in ratione mollitia? Consequuntur cum, accusamus sed dolores quasi nesciunt tenetur officiis odio! Iste unde a maiores?</p>
+        </div>
+        <div class="column">
+            <h2>Column 3</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non nemo, quibusdam itaque recusandae, molestias ad distinctio aliquam corporis vel pariatur quia eos laboriosam id dolore consequuntur laborum sed repellendus, in iure impedit nobis blanditiis architecto mollitia incidunt. Aut asperiores eius laboriosam non, dignissimos quia totam dolorem et. Accusantium consectetur modi voluptatem animi quos, impedit, laboriosam totam recusandae omnis sequi deserunt, esse dolorum minima inventore quisquam eum officiis dolores libero fuga. Repellendus delectus blanditiis recusandae necessitatibus molestiae eos, dignissimos, suscipit commodi sequi mollitia tenetur quisquam fugiat totam, numquam eveniet deserunt id quis corporis saepe dolores placeat odio unde? Illum, unde commodi.</p>
+        </div>
+    </main>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>

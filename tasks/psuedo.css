@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    margin: 0;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+}
+
+.link-list li {
+    margin-bottom: 10px;
+}
+
+.link-list a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.link-list a:hover {
+    color: skyblue;
+}
+
+.link-list a:focus {
+    background-color: yellow;
+    outline: none;
+}
+
+.link-list a:active {
+    text-decoration: underline;
+}
+
+.link-list a:visited {
+    color: gray;
+}

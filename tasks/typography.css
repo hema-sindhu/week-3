@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.responsive-heading {
+    font-size: 5vw;
+    text-align: center;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    .responsive-heading {
+        font-size: 8vw;
+    }
+}
